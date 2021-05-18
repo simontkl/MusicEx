@@ -1,7 +1,7 @@
 
 ## MusEx - Group 14
 
-The project is a collaboration of 4 students from different backgrounds (Big Data Engineering, Data Science, and Information Systems).
+The project is a collaboration of 4 students from different backgrounds (Big Data Engineering, Data Science, and Information Systems). The original repo is private.
 ## Summary
 
 Interactive visualization of multi-dimensional audio analysis data allowing for exploration and analysis enhanced by clustering techniques and a multi-view design powered by D3.js & MongoDB. Group project for the Information Visualization course of the Universiteit van Amsterdam, 2021.
