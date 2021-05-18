@@ -1,0 +1,144 @@
+@import "../global.scss"
+
+a
+  color: #61dafb
+
+button
+  background-color: black
+  border: 1px solid white
+  color: white
+  padding: 4px 8px
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  cursor: pointer
+
+.loading-spinner
+  svg
+    position: relative
+    margin: 0 auto
+
+input
+  background-color: black
+  border: 1px solid white
+  color: white
+  text-decoration: none
+
+  &.numeric-input
+
+  &[type=number]::-webkit-inner-spin-button,
+  &[type=number]::-webkit-outer-spin-button
+    -webkit-appearance:none
+
+nav
+  height: $nav-bar-height
+  background-color: black
+  position: relative
+
+  #app-name
+    line-height: $nav-bar-height
+    position: absolute
+    top: 0
+    left: 0
+    font-weight: 700
+    font-size: 1.5rem
+    padding: 0 15px
+
+
+.graph-container
+  position: fixed
+
+  .overlay
+    z-index: 9999999999 !important
+    position: fixed
+    background-color: #242424 //black
+    border: 2px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+    top: 50px
+    max-height: calc(100vh - 100px)
+    left: 15%
+    width: 60%
+    overflow: hidden
+    padding: 5%
+
+    table
+      border-collapse: collapse
+      text-align: left
+      td
+        border-spacing: 0
+        padding: 15px
+        border: 1px solid white
+
+    &.search-results
+      table
+        //background-color: blue
+        width: 100%
+        tr
+          cursor: pointer
+          &:hover
+            td
+              font-weight: bolder
+        tr
+        td
+          border: none
+          border-bottom: 1px solid lightgray
+          // display: block
+
+        
+
+    &.help-menu
+      .close:hover
+        border-bottom: 1px solid white
+        display: inline-block
+        cursor: pointer
+
+  
+  .graph-controls
+    height: $nav-bar-height
+    position: fixed
+    width: 100%
+    top: 0
+
+    .dimensions
+      position: absolute
+      display: inline-block
+      width: calc(100% - 140px - 350px)
+      left: 120px
+      padding: 0 10px
+      .dropdown-container
+        width: 200px
+
+    .forms
+      right: 40px
+      top: -6px
+      position: absolute
+      width: 400px
+      padding
+
+      > *
+        display: inline-block
+        //font-size: 0.5rem
+        //color: lightgray
+        height: 22px
+        margin: 4px
+        top: 0
+        width: 60px
+
+      #search-query-input
+        padding: 4px
+        height: 18px
+        width: 140px
+
+      #search-type-select
+        width: 100px
+
+.help-icon
+  cursor: pointer
+  position: fixed
+  right: 0px
+
+.result-icon
+  margin: 0 4px;
+
+#app-search
+  height: 27px

@@ -1,0 +1,26 @@
+@import "../../global.scss"
+
+.widget-container
+  position: relative
+  width: 100%
+  overflow: hidden
+  border-bottom: $border-width solid #a9a9a9
+
+.widget-fullscreen 
+  width: 100vw
+  height: calc(100vh - #{$nav-bar-height})
+  position: fixed
+  top: $nav-bar-height
+  left: 0
+  z-index: 1000
+  background: $base-color
+  transition: all .15s linear
+
+.toggle-button 
+  z-index: 999
+  font-size: 0.8rem
+  cursor: pointer
+  position: absolute
+  top: 0
+  right: 0
+  padding: 20px

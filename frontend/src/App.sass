@@ -1,0 +1,49 @@
+@import "./global.scss"
+
+#content
+  width: 100%
+  top: $nav-bar-height
+  height: calc(100vh - #{$nav-bar-height})
+  overflow: hidden
+  position: absolute
+
+  #main-view
+    z-index: 10
+    @include transition(width 0.2s ease-in)
+    width: calc(100% - 30px)
+    position: absolute
+    height: 100%
+    overflow: hidden
+
+    &.expanded
+      width: 60%
+
+    .graph
+      z-index: 100
+      position: absolute
+      width: 60%
+      left: 0
+
+  #side-view
+    z-index: 20
+    position: absolute
+    outline: $border-width solid #a9a9a9
+    width: 40%
+    height: 100%
+    float: right
+    @include transition(right 0.2s ease-in)
+    right: calc(30px - 40%)
+    overflow-x: hidden
+    overflow-y: scroll
+    top: 0
+    font-size: 0.7rem
+    background: #242424
+
+    &.expanded
+      right: 0
+    
+    .slider
+      position: relative
+      height: 50px
+      bottom: 10
+      border-bottom: $border-width solid #a9a9a9
